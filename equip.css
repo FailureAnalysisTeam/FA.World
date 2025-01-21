@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: "Jua", sans-serif;
+  background-color: #FCFAEE;
+}
+
+.equip-head {
+  width: auto;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  font-size: 80px;
+}
+.equip-head > img {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.equip-head > a {
+  text-decoration: none;
+  color: #EF5A6F;
+  text-shadow: 4px 1px rgba(0, 0, 0, 0.8);
+}
+
+.equip-head > a:hover {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    scale: 1.2;
+    
+  }
+
+
+.equip-head > a:active {
+  transform: translateX(5px) translateY(8px);
+  transition-duration: 0.2s;
+}
+
+#equipDocBox , #calBox , #fixedAssetBox , #startandshutBox , #versionUpBox{
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color:#536493;
+  
+}
+
+#equipDocBox>a , #calBox>a , #fixedAssetBox>a , #startandshutBox>a , #versionUpBox>a {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF1DB;
+  
+}
+
+#equipDocBox:hover , #calBox:hover , #fixedAssetBox:hover , #startandshutBox:hover ,#versionUpBox:hover{
+  background-color: rgb(239, 90, 111,0.9);
+  transition-duration: 0.3s;
+  letter-spacing: 3px;
+}
+
+
+
+

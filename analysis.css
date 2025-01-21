@@ -1,0 +1,155 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: "Jua", sans-serif;
+  background-color: #fcfaee;
+}
+
+.analysis-head {
+  width: auto;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  font-size: 80px;
+}
+
+.analysis-head > img {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.analysis-head > a {
+  text-decoration: none;
+  color: #ef5a6f;
+  text-shadow: 4px 1px rgba(0, 0, 0, 0.8);
+}
+
+.analysis-head > a:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  scale: 1.2;
+}
+
+.analysis-head > a:active {
+  transform: translateX(5px) translateY(8px);
+  transition-duration: 0.2s;
+}
+
+
+.FAanalysis-wrapper {
+  font-size: 30px;
+  color:#fff1db ;
+  padding: 20px;
+  background-color: #536493;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Add hover effect for the button */
+.FAanalysis-wrapper:hover,
+.FAanalysis-checkbox:checked + .FAanalysis-wrapper {
+  background-color: rgba(239, 90, 111, 0.9);
+  letter-spacing: 3px;
+
+  
+}
+
+.FAanalysis-wrapper:active {
+  background-color: rgb(239, 90, 111, 0.7);
+  transition-duration: 0.2s;
+}
+
+/* Hide the checkbox */
+.FAanalysis-checkbox {
+  display: none;
+}
+
+/* Skill Menu - initially hidden */
+.analysis-menu {
+  max-height: 0;                /* Hide content */
+  overflow: hidden;             /* Hide anything outside the max-height */
+  background-color:rgb(255, 228, 225,0.5);
+  transition: max-height 0.5s ease-out; /* Slide down animation */
+  border-radius: 8px;
+}
+  
+
+
+/* When checkbox is checked, show the skill menu */
+.FAanalysis-checkbox:checked + .FAanalysis-wrapper + .analysis-menu {
+  display: block;
+  max-height: 1000px; 
+}
+
+.analysis-menu a {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #ef5a6f;
+}
+
+.analysis-menu > div{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #536493;
+}
+
+/* .analysis-menu:last-child{
+    padding-bottom: 200px;
+} */
+
+.analysis-menu > div:hover{
+  background-color:rgb(239, 90, 111,0.2) ;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.analysis-menu a:active {
+  color: #536493;
+  cursor: pointer;
+
+}
+
+/* Additional Info Nav item styles */
+#guidelineBox,
+#locationManagementBox,
+#insightBox {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #536493;
+}
+#locationManagementBox{
+    margin-top: 10px;
+}
+
+#guidelineBox>a ,
+#locationManagementBox>a ,
+#insightBox>a  {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff1db;
+}
+
+/* Hover effect for nav items */
+.info-nav > div:last-child:hover,
+#guidelineBox:hover ,
+#locationManagementBox:hover ,
+#insightBox:hover  {
+  background-color: rgb(239, 90, 111, 0.9);
+  transition-duration: 0.3s;
+  letter-spacing: 3px;
+}
+
